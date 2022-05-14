@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Validated Login Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="login-page">
+        <div class="form">
+
+          <form class="login-form">
+            <input type="text" placeholder="username" id="user"/>
+            <input type="password" placeholder="password" id="pass"/>
+
+            <button onclick="check(this.form)" value="Login">login</button>
+            
+            <script language="javascript">
+                function check(form)
+                {
+              
+                 if(form.user.value == "user" && form.pass.value == "pass")
+                  {
+                    window.open('index.html')
+                    alert("log in success")  
+
+                  }
+                 else
+                 {
+                   alert("Error Password or Username")
+                  }
+                }
+                </script>
+
+            <p class="message">Forgot Password?    <a href="#">Create an account</a></p>
+          </form>
+
+        </div>
+      </div>
+</body>
+</html>
